@@ -1,0 +1,84 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/*-----Style for the filter selectors------*/
+
+.styled-select {
+    appearance: none;
+    background-color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.select-container label {
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Custom arrow for select dropdown */
+.styled-select::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 3px);
+    pointer-events: none;
+}
+
+/*-----Style for the Card Products----------*/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.product-card p {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
