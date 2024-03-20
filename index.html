@@ -3,27 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Store Products</title>
 </head>
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>TrojanFake Store</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sorting Section -->
+
     <div class="container">
         <h1>Store Products</h1>
         <div class="controls">
             <div class="select-container">
-                <label for="sort">Sort by:</label>
                 <select id="sort" class="styled-select">
+                    <option value="" disabled selected>Price</option>
                     <option value="price_asc">Price&#9650</option>
                     <option value="price_desc">Price&#9660</option>
                 </select>
             </div>
             <div class="select-container">
-                <label for="category">Filter by Category:</label>
                 <select id="category" class="styled-select">
-                    <option value="all">All</option>
+                    <!--<option value="" disabled selected>Category</option>-->
+                    <option value="all">All Categories</option>
                     <option value="men's clothing">Men's Clothing</option>
                     <option value="jewelery">Jewelry</option>
                     <option value="electronics">Electronics</option>
@@ -35,6 +50,12 @@
             <!-- Product cards will be here -->
         </div>
     </div>
+
+    <footer>
+        <p>Making the complex simple &copy; 2022, trojan69 Design</p>
+        <p>Calgary. Alberta, Canada
+        <br>From Bogotá D.C., Colombia</p>
+    </footer>
 
     <script src="script.js"></script>
     
