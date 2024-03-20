@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Fetch data from API
     async function fetchData() {
         try {
-            const response = await fetch("http://fakestoreapi.com/products");
+            const response = await fetch("https://fakestoreapi.com/products");
             const data = await response.json();
             console.log("Fetched data:", data);
             return data;
